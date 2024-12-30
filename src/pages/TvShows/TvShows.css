@@ -1,0 +1,79 @@
+/* Overall section styling */
+.tvshows-section {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Heading styling */
+  .tvshows-heading {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 35px;
+    color: #333;
+  }
+  
+  /* Grid container styling */
+  .tvshows-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    grid-template-rows: repeat(8, auto); /* 8 rows */
+    gap: 15px;
+    height: 100vh; /* Set a fixed height to make it scrollable */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+  }
+  
+  .tvshows-container::-webkit-scrollbar {
+    width: 8px; /* Customize scrollbar width */
+  }
+  
+  .tvshows-container::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+    border-radius: 4px;
+  }
+  
+  .tvshows-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Scrollbar hover color */
+  }
+  
+  /* Individual card styling */
+  .tvshow-item {
+    position: relative;
+    width: 240px;
+    height: 250px;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .tvshow-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+  
+  .tvshow-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .tvshow-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 90%;
+  }
+  
